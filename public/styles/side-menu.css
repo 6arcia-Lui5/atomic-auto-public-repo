@@ -1,0 +1,36 @@
+.menu-wrapper {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 9999;
+  }
+  
+  .menu {
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 114px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -200px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.685);
+    backdrop-filter: blur(10px);
+    transition: right 0.3s ease-in-out;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 9999;
+  }
+
+  .menu a {
+    text-decoration: none;
+  }
+  
+  .menu.active {
+    right: 0;
+  }
+  

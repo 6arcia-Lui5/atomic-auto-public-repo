@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="styles/side-menu.css">
+        <link rel="stylesheet" href="styles/footer.css">
+        <link rel="icon" href="img/logoRedYellow.jpg">
+        <title>Premium Auto Detailing Services</title>
+        
+    </head>
+    <body>
+        <header class="header">
+            <div class="left-header">
+                <a href="#about-us-title"><img class="company-logo" src="img/logoRedYellow.jpg" alt=""></a>
+            </div>
+            <div class="middle-header">Atomic Auto</div>
+            <div class="right-header"><button class="menu-toggle" style="background-color: transparent; cursor: pointer; padding: 0;"><img src="src/menu_FILL0_wght400_GRAD0_opsz48.svg" alt=""></button></div>
+        </header> 
+        <main>
+            <div class="menu-wrapper">
+                <nav class="menu">
+                    <a href="#about-us-title">About Us</a>
+                    <a href="#interior-services">Interior Services</a>
+                    <a href="#exterior-services">Exterior Services</a>
+                    <a href="#quote-request">Contact Us</a>
+                </nav>
+                <div class="overlay"></div>
+            </div>
+            <div class="shadow">
+                <div>Premium Mobile Detailing Services</div>
+                <div>Available in the Moses Lake area</div>
+            </div>
+                <div id="gallery" class="gallery"><img class="image1" src="img/logoRedYellow.jpg" alt="">
+                <div class="about-us-title" id="about-us-title">About Us</div>
+                <div class="about-us-description">
+                    <p>Welcome to Atomic Auto, where passion and expertise converge to provide you with top-notch auto detailing services. 
+                    We are Luis and Edward, the proud co-owners and detailers behind this venture. 
+                    With a shared love for all things automotive, we pour our hearts into every detail to ensure your vehicle receives the treatment it deserves. 
+                    We operate primarily within the Moses Lake Area, but are also available in the nearby surrounding areas! </p>
+                    <div class="more-details" onclick="expandAboutUs(this)">
+                        <div class="details">
+                            <p>At Atomic Auto, we understand that your car is more than just a mode of transportation. 
+                            It's an extension of your personality and a source of pride. Armed with industry-leading techniques, cutting-edge tools, and premium products, we guarantee exceptional results that will leave you speechless.</p>
+                            <p> We believe in the power of personalization. We take the time to listen to your unique needs and tailor our services accordingly. 
+                            Every vehicle that recieves our services receives individualized care and attention, ensuring that no detail is overlooked. 
+                            We treat your car as if it were our own, and our meticulous approach shines through in the final result.</p>
+                            <p>As a small, owner-operated business, we also take pride in building lasting relationships with our clients. 
+                            We value your trust and are committed to providing you with exceptional customer service. 
+                            You'll will always be greeted with a warm smile and a friendly atmosphere. 
+                            We'll gladly answer any questions you may have and provide expert advice on how to maintain your vehicle's appearance long after leaving our care.</p>
+                            <p>Discover the personalized touch that sets Atomic Auto apart from the rest. 
+                            Trust us to transform your vehicle into a work of art that turns heads wherever you go. 
+                            Contact us today to schedule an appointment or to learn more about our range of services. </p>
+                            </div>
+                            <p>Your journey to automotive excellence begins here.</p>
+                            <div style="display: flex; align-items: center; justify-content: center; padding-bottom: 30px;">
+                                 <div class="more-about-us">Click here to learn more about us!</div>
+                            </div>
+                       
+                    </div>
+                </div>
+                <div>
+                    <div class="service-title">Interior Services</div>
+                    <div class="interior-services" id="interior-services">
+                        <div class="service-card" id="bron" onclick="expandServiceCard(this)">
+                        <div class="image-container"><img class="service-image" src="img/interior-civic.jpg" alt=""></div>
+                            <div class="media-container">
+                                <div class="service-name">Basic Package</div>
+                                <div class="service-description">
+                                    <p>&#x2022 Garbage removal</p>       
+                                    <p>&#x2022 Vacuum of entire interior</p>
+                                    <p>&#x2022 Wipe down of all surfaces</p>
+                                    <p>&#x2022 Window/Mirror cleaning</p>
+                                </div>
+                                <div class="service-pricing">Pricing Range $120-$150</div>
+                            </div>
+                            
+                        </div>
+                        <div class="service-card" id="silv" onclick="expandServiceCard(this)">
+                            <div class="image-container"><img class="service-image" src="img/interior-tesla.jpg" alt=""></div>
+                            <div class="media-container">
+                                <div class="service-name">Standard Package</div>
+                                <div class="service-description">
+                                    Includes everything in our <strong>Basic package</strong> and:
+                                    <p>&#x2022 Deep cleaning of carpets</p>
+                                    <p>&#x2022 Cleaning and conditioning of leather/fabric seats</p>
+                                    <p>&#x2022 UV protection on surfaces</p>
+                                    <p>&#x2022 Dashboard and console cleaning and dressing</p>
+                                </div>
+                                <div class="service-pricing">Pricing Range $150-$250</div> 
+                            </div>
+                            
+                        </div>
+                        <div class="service-card" id="gold" onclick="expandServiceCard(this)">
+                            <div class="image-container"><img class="service-image" src="img/interior-merc.jpg" alt=""></div>
+                            <div class="media-container">
+                                <div class="service-name">Premium Package</div>
+                                <div class="service-description">
+                                    Includes everything in our <strong>Basic and Standard Package</strong> and:
+                                    <p>&#x2022 Through vacuuming of seats, carpets, and floor mats</p>
+                                    <p>&#x2022 Steam cleaning and stain removal for carpets and upholstery</p>
+                                    <p>&#x2022 Detailed cleaning of all interior surfaces</p>
+                                </div>
+                                <div class="service-pricing">Pricing Range $250-$400</div> 
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="service-title">Exterior Services</div>
+                    <div class="exterior-services" id="exterior-services">
+                        <div class="service-card" id="bron" onclick="expandServiceCard(this)">
+                            <div class="image-container"><img class="service-image" src="img/exterior-civic.jpg" alt=""></div>
+                            <div class="media-container">
+                                <div class="service-name">Basic package</div>
+                                <div class="service-description">
+                                    <p>&#x2022 Handwash and dry</p>
+                                    <p>&#x2022 Wheel and tire cleaning and dressing</p>
+                                    <p>&#x2022 Exterior wax/sealant</p>
+                                    
+                                </div>
+                                <div class="service-pricing">Pricing Range $80-$150</div> 
+                            </div>
+                            
+                        </div>
+                        <div class="service-card" id="silv" onclick="expandServiceCard(this)">
+                            <div class="image-container"><img class="service-image" src="img/exterior-brz.jpg" alt=""></div>
+                            <div class="media-container">
+                                <div class="service-name">Standard Package</div>
+                                <div class="service-description">
+                                    Includes everything in our Basic Package and:
+                                    <p>&#x2022 Pre-wash treatment</p>
+                                    <p>&#x2022 Wheel and tire cleaning/dressing</p>
+                                    <p>&#x2022 Paint decontamination</p>
+                                    <p>&#x2022 High quality protective wax/sealant</p>
+                                </div>
+                                <div class="service-pricing">Pricing Range $150-$250</div> 
+                            </div>
+                            
+                        </div>
+                        <div class="service-card" id="gold">
+                            <div class="unavailable">Coming soon</div>
+                            <div class="image-container"><img class="service-image" src="img/exterior-porsche.jpg" alt=""></div>
+                            <div class="media-container">
+                                <div class="service-name">Premium Package</div>
+                                <div class="service-description">
+                                    Includes everything in our <strong>Basic and Standard Package and:</strong>
+                                    <p>&#x2022 Paint decontamination and through polishing</p>
+                                    <p>&#x2022 Application of high-quality paint protection</p>
+                                </div>
+                                <div class="service-pricing">Pricing Range $250-$500</div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-title">Additonal Services</div>
+                    <div class="additional-services" id="exterior-services">
+                        <div class="service-card" id="gold">
+                            <div class="image-container"><img class="service-image" src="img/car-sticker.jpg" alt=""></div>
+                            <div class="media-container">
+                                <div class="service-name">Sticker removal</div>
+                                <div class="service-description">
+                                    Stuck on stickers?
+                                </div>
+                                <div class="service-pricing">Pricing starting at $20</div> 
+                            </div>
+                        </div>
+                        <div class="service-card" id="gold">
+                            <div class="image-container"><img class="service-image" src="img/pet hair.jpg" alt=""></div>
+                            <div class="media-container">
+                                <div class="service-name">Pet hair removal</div>
+                                <div class="service-description">
+                                    Pesky pet hair?
+                                </div>
+                                <div class="service-pricing">Pricing starting at $20</div> 
+                            </div>
+                        </div>
+                        <div class="service-card" id="bron">
+                            <div class="image-container"><img class="service-image" src="img/headlight-restor.jpg" alt=""></div>
+                            <div class="media-container">
+                                <div class="service-name">Headlight Restoration</div>
+                                <div class="service-description">
+                                    Get your headlights looking good as new!
+                                </div>
+                                <div class="service-pricing">Pricing starting at $50</div> 
+                            </div>
+                        </div>
+                        <div class="service-card" id="silv">
+                            <div class="image-container"><img class="service-image" src="img/odor-removal.jpg" alt=""></div>
+                            <div class="media-container">
+                                <div class="service-name">Odor removal</div>
+                                <div class="service-description">
+                                    Let us help you get rid of that stubborn smell!
+                                </div>
+                                <div class="service-pricing">Pricing starting at $60</div> 
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="quote-request" id="quote-request">
+                        <p class="question">Interested in our services?</p>
+                        <p class="quote-directions">fill out the respective form below!</p>
+                        <div style="display: flex; flex-direction: row;align-items: center;justify-content: center;">
+                            <a href="https://forms.gle/agN1YAeXJLApFy839" target="_blank" role="button" class="quote-button">
+                                    English
+                            </a>
+                            <a href="https://forms.gle/Ktx8jhpDafza3Vsy8" target="_blank" role="button" class="quote-button">
+                                    Español
+                            </a>
+                        </div>
+                        
+                        <p class="note">
+                            Note: Our Prices are adjusted accordingly based on location, services done, and condition of the vehicle.
+                        </p>
+                    </div>
+                </div>
+                <div class="footer" id="footer">
+                    <p>Have Questions? Contact us!</p>
+                        <p><span style="font-style: italic;">Se habla Espanol!</span></p>
+                    <div class="stuff">
+                         <div class="hours">
+                            <p>Phone: (555)555-5555</p>
+                            <a style="text-decoration: none;" href="mailto:AtomicAMobileD@gmail.com&body">Email: AtomicAMobileD@gmail.com</a>
+                        </div>
+                        <div class="hours">
+                            <p style="font-weight: bold; display: flex; justify-content: center;">Business Hours</p>
+                            <p>Monday - Friday: 9AM to 5PM</p>
+                            <p>Saturday-Sunday: Closed</p>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </main>
+    </body>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+        const overlay = document.querySelector('.overlay');
+
+        menuToggle.addEventListener('click', function() {
+            menu.classList.toggle('active');
+            overlay.classList.toggle('active');
+        });
+
+        overlay.addEventListener('click', function() {
+            menu.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+
+        function expandServiceCard(card) {
+            card.classList.toggle("expanded");
+        }
+        function expandAboutUs(aboutUs) {
+            aboutUs.classList.toggle("expanded");
+        }
+    </script>
+</html>
